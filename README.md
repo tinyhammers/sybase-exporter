@@ -21,6 +21,7 @@ All metrics include a `host` label with the hostname of the machine running the 
 - Bash
 - Netcat (nc) - Used for creating the HTTP server
 - Sybase client tools (isql)
+- A file containing the Sybase pw
 
 ## Installation
 
@@ -106,9 +107,9 @@ LISTEN_ADDRESS="0.0.0.0"
 
 # Sybase configuration
 SYBASE="/usr/local/sybase"
-SYBASE_SERVER="RPASEP02"
-SYBASE_USER="datadog"
-ZDIR="/opt/zabbixAgent"
+SYBASE_SERVER="SERVER_NAME_GOES_HERE"
+SYBASE_USER="SYBASE_USER"
+ZDIR="/DIR/TO/PWFILE/.pw"
 PASSWORD_FILE="$ZDIR/.pw"
 ```
 
